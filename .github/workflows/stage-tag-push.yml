@@ -3,7 +3,8 @@ run-name: ${{ github.actor }} is testing tag builds 🚀
 on: 
   push:
     tags:
-      - "*-stage", "*-production"
+      - "*-stage"
+      - "*-production"
 
 jobs:
   Explore-GitHub-Actions:
