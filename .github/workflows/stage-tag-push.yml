@@ -4,7 +4,6 @@ on:
   push:
     tags:
       - "*-stage"
-      - "*-production"
 
 jobs:
   Explore-GitHub-Actions:
@@ -22,10 +21,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: This is for production
-        if: endsWith(github.ref,'-production')
-        - run: echo "production"
-      - name: This is for stage
-        if: endsWith(github.red, '-stage')
-        - run: echo "staging"
 
