@@ -1,5 +1,5 @@
 name: Build to staging using tag push
-run-name: ${{ github.actor }} is testing tag builds 🚀
+run-name: ${{ github.actor }} is testing stage tag builds 🚀
 on: 
   push:
     tags:
