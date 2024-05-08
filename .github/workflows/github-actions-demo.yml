@@ -1,6 +1,10 @@
-name: GitHub Actions Demo Soniceitis
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+name: Build to staging using tag push
+run-name: ${{ github.actor }} is testing tag builds 🚀
+on: 
+  push:
+    tags:
+      - "*-stage"
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
