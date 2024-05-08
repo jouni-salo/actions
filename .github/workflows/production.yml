@@ -1,5 +1,5 @@
-name: Build to production using tag push
-run-name: ${{ github.actor }} is testing production tag builds 🚀
+name: Production build from tag
+run-name: ${{ github.actor }} has tagged production build 🚀
 on: 
   push:
     tags:
